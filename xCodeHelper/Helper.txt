@@ -1,0 +1,41 @@
+一.Unity编辑器设置
+	1.设置自动旋转
+	2.隐藏ios原生的状态栏
+	3.设置静态启动动画，只设置iphone
+	4.设置包名、Version、Build
+	5.设置使用相机权限（use camera）、位置权限（use location）、麦克风权限（use microphone）
+	6.ios平台代码裁剪，勾选去掉
+	7.设置sharesdk的appkey和secret
+	8.
+
+
+二.XCode设置
+	1.General
+		(1).选择证书
+	2.Info 
+		(1).Localization native development 改为中文
+		(2).设置用户隐私权限=>是否可以访问相册(Private - Photo Library Usage Description) use photo
+		(3).URL Types 添加URL Schemes 设置微信的参数
+	3.Build Settings
+		(1).关闭Bitcode
+	4.Build Phases 
+		(1).Run Scripts => Shell中的删除
+
+三.Archive
+	1.选择Ad Hoc版本发布
+		
+//edawtech
+三.发布Hoc版本设置：（不够详细的话  可以到 fir.im上面看一下 怎么发布Hoc）
+	1.Project->info  Configurations 增加 Hoc
+	2.Project->Build Setting -> Code Signing Identity ->Hoc 修改  发布者
+	3.Unity-Iphone -> Archive-> Build Configuration 修改为 Hoc  
+	4.发布者修改为 对应帐号
+		hoc
+		https://clyx.edawtech.com/apk/v1.3.ipa
+		https://clyx.edawtech.com/apk/64.png
+		https://clyx.edawtech.com/apk/img128.png
+
+Error:出现的错误
+	1.“code 1”：一般是删除xcode data device的缓存记录。
+	2.“info.plist”：一般是路径问题，找到项目，选择info面板，搜索info，修改info.plist的路径。
+	3.
